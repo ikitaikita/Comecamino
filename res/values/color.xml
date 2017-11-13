@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#CC3300</color>
+    <color name="grey">#B2B3BE</color>
+    <color name="green">#009933</color>
+	<color name="lightgrey">#D9D9D9</color>
+	<color name="blue">#003399</color>
+	<color name="magenta">#E5097F</color>
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="fucsia">#BA3C70</color>
+	<color name="tit">#F7880A</color>
+	<color name="fondoT">#F88C3F</color>
+	<color name="text_new_light">#FBFAAD</color>
+	<color name="text_primary_light">#FFFFFF</color>
+	<color name="text_secondary_light">#CCCCCC</color>
+	<color name="text_spell">#009A85</color>
+	<color name="text_descrip">#403121</color>
+	<color name="text_titulo">#222622</color>
+	<color name="text_desamenu">#F7880A</color>
+	
+	
+	
+	
+</resources>

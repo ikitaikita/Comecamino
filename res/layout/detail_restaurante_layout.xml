@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoT"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:minWidth="400dp"
+        android:orientation="vertical" >
+
+          <RatingBar
+                  android:id="@+id/ratingRestaurante"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"                 
+                  android:isIndicator="true"
+                  android:numStars="4"
+                  android:rating="0.0"
+                  />
+
+        <ImageButton
+            android:id="@+id/gotoMap"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/desc"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/go_to_map_style" />
+    </RelativeLayout>
+
+  
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ButtonVote"
+        android:layout_below="@+id/header"            
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ScrollViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+              <TextView
+		        android:id="@+id/nombreRest"
+		        android:layout_width="match_parent"	
+		        android:layout_marginTop="10dp"	       
+		       	android:layout_height="wrap_content"	        	
+		        android:gravity="center"		       
+		        android:textColor="@color/text_titulo"
+		        android:text="titulo del restaurante" />
+              
+              <TextView
+		        android:id="@+id/descriptionRestaurante"
+		        android:layout_width="match_parent"
+		       	android:layout_height="wrap_content"  
+		       	android:gravity="left"   
+		        android:layout_below="@+id/nombreRest"
+		        android:layout_marginLeft="10dp"	       
+		        android:textColor="@color/text_descrip"
+		        />
+               <TextView
+		        android:id="@+id/textdirRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/descriptionRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/dirRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content" 		      
+		        android:layout_below="@+id/textdirRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		          />
+                <TextView
+		        android:id="@+id/textcocinaRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/dirRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/cocinaRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content"		      
+		        android:layout_below="@+id/textcocinaRestaurante"
+		        android:layout_marginLeft="10dip"
+		        android:gravity="left"		       
+		        android:textColor="@color/text_descrip"
+		       />  
+		        <TextView
+		        android:id="@+id/textcaracRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/cocinaRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />     
+              <TextView
+		        android:id="@+id/caractRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textcaracRestaurante"
+		        android:layout_marginLeft="10dip"
+		        android:gravity="left"		       
+		        android:textColor="@color/text_descrip"
+		         />
+                 <TextView
+		        android:id="@+id/textchequeRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/caractRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />   
+              <TextView
+		        android:id="@+id/chequeRestaurante"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"		      
+		        android:layout_below="@+id/textchequeRestaurante"
+		        android:layout_marginLeft="10dip"
+		        android:gravity="left"		       
+		        android:textColor="@color/text_descrip"
+		         />
+               <!-- TextView
+		        android:id="@+id/textwebRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/chequeRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />   
+              <TextView
+		        android:id="@+id/webRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp"		      
+		        android:layout_below="@+id/textwebRestaurante"
+		        android:layout_marginLeft="10dip"
+		        android:gravity="left"		       
+		        android:textColor="@color/text_descrip"
+		         />-->
+               <Button
+            android:id="@+id/buttonWeb"
+            android:layout_width="80dp"
+            android:paddingTop="5dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dip"
+            android:gravity="left"
+            android:layout_below="@+id/chequeRestaurante"
+            android:textColor="@color/text_descrip"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/webRestaurante" />
+               <TextView
+		        android:id="@+id/texttfnoRestaurante"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/buttonWeb"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />   
+              <TextView
+		        android:id="@+id/tfnoRestaurante"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"			      
+		        android:layout_below="@+id/texttfnoRestaurante"
+		        android:layout_marginLeft="10dip"
+		        android:gravity="left"		       
+		        android:textColor="@color/text_descrip"
+		          />
+              
+              <Button
+            android:id="@+id/buttonMenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tfnoRestaurante"
+            android:textColor="@color/text_desamenu"
+            android:textStyle="bold"
+            android:text="@string/menusdesayunos" />
+               
+              
+          </RelativeLayout>
+         
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ButtonVote"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+       
+        android:layout_above="@+id/advert"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <!-- RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/votesPlus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bt_mas1_style" >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="30dp"
+                android:text="@string/nVotosMas"
+                android:textColor="@android:color/white"
+                android:textSize="25dip" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/votesMinus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bt_menos1_style" >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="30dp"
+                android:text="@string/nVotosMas"
+                android:textColor="@android:color/white"
+                android:textSize="25dip" >
+            </TextView>
+        </RelativeLayout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"  
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bt_share_style" />
+
+        </RelativeLayout>
+        </LinearLayout>
+   
+    <LinearLayout
+        android:id="@+id/advert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+      </LinearLayout>
+   
+  
+
+</RelativeLayout> <!-- Fin del layout principal -->

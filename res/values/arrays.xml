@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      
+    <string-array name="travel_arrays">
+        <item>A pie (azul)</item>
+        <item>Bicicleta (verde)</item>
+        <item>Coche (gris)</item>
+    </string-array>
+    <string-array name="tipos_arrays">
+        <item>Apto para Celiacos</item>
+        <item>Apto para Diabeticos</item>
+       
+    </string-array>
+    <string-array name="filtro_arrays">
+        <item>Todos</item>
+        <item>Cocina para Celiacos</item>
+        <item>Cocina vegana</item>
+        <item>Cocina vegetariana</item>
+        <item>Cocina tradicional</item>
+    </string-array>
+    
+</resources>

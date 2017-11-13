@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Comecamino</string>
+    <string name="action_settings">Settings</string>
+    <string name="author">www.comecamino.com</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="cargar">Restaurantes Cercanos</string>
+    <string name="todos">Todos los Restaurantes</string>
+    <string name="menus">Menus</string>
+    <string name="menusdesayunos">Menus y Desayunos</string>
+    <string name="desayunos">Desayunos</string>
+    <string name="grabar">Guardar en Internet</string>
+    <string name="atras">Pantalla Anterior</string>
+    <string name="salir">Salir Aplicación</string>    
+    <string name="filtro">Todos los Restaurantes</string>
+    <string name="filtroCercanos">Restaurantes Cercanos</string>
+    <string name="mapTodos">Mapa de Restaurantes</string>
+    <string name="restaurantes_camino">Tus Restaurantes del Camino</string>
+    <string name="configuracion">Configuración Conexión</string>
+    <string name="ip_servidor">IP/URL</string>
+    <string name="ipServidor">IP/URL</string>
+    <string name="indiquenombre">Escriba Nombre</string>
+    <string name="escriobanumero">Escriba Clave Alfa Numérica</string>
+    <string name="title_all_restaurantes">Restaurantes</string>
+    <string name="title_all_menus">Menus</string>
+    <string name="INFORMACION">Info</string>
+    <string name="cargandoRestaurantes">Cargando Restaurantes</string>
+    <string name="cargandoMenus">Cargando Menus y Desayunos</string>
+    <string name="webRestaurante">Web</string>
+    
+    
+    <string name="ErrorCarga">Error en la carga</string>
+    <string name= "desc"></string>
+    <string name="travel_prompt">Selecciona un modo de ir</string>
+    <string name="tipos_prompt">Selecciona un tipo de cocina</string>
+    <string name="filtro_prompt">Selecciona un filtro</string>
+    <string name="about">About</string>
+    
+    <string name="caracteristicas">Caracteristicas</string>
+    
+      <string name="about_app_developed_by">aplicacion desarrollada por</string>
+    <string name="about_app_developed_by_author">Comecamino</string>
+  	<string name="about_app_description">Tus restaurantes del Camino</string>
+    <string name="about_contact">Contacto</string>
+    <string name="about_contact_email">info@comecamino.com</string>
+    <string name="about_contract">www.comecamino.com</string>
+    
+    
+    
+    <!--  YOUTUBE STANDALONE -->
+    
+    <string name="musicamino">Musicamino</string>
+    
+    <string name="standalone_player_demo_name">Musicamino</string>
+    
+    <string name="play_video">Play video</string>
+    <string name="play_playlist">Play playlist</string>
+	<string name="start_index">Start index</string>
+	<string name="start_time">Start time (sec)</string>
+	<string name="autoplay">Autoplay</string>
+	<string name="lightbox_mode">Lightbox mode</string>
+	<string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+	
+
+</resources>

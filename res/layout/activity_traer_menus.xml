@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/fondoT"
+     android:orientation="vertical"
+     >
+     
+     <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"        
+        android:orientation="vertical" >  
+		
+           <TextView
+        android:id="@+id/Title1"
+        style="@style/section_title_todosrestaurantes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/menusdesayunos" />
+        
+    </LinearLayout>
+    
+     
+     <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="366dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_list" />
+        
+       
+    
+    </LinearLayout>
+    
+     
+ 
+</RelativeLayout>

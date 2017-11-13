@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoT"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:minWidth="400dp"
+        android:orientation="vertical" >
+        
+    </RelativeLayout>
+
+    
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ButtonVote"
+        android:layout_below="@+id/header"            
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ScrollViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+ 
+            
+              <TextView
+		        android:id="@+id/nombreMenu"
+		        android:layout_width="match_parent"
+		        android:layout_marginTop="10dp"	       
+		       	android:layout_height="40dp"	 		       	
+		        android:gravity="center"		       
+		        android:textColor="@color/text_titulo"
+		          />
+              
+              <TextView
+		        android:id="@+id/nombreRestaurante"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"		      
+		        android:layout_below="@+id/nombreMenu"
+		        android:gravity="center"		       
+		        android:textColor="@color/text_titulo"
+		         />
+              
+              <TextView
+		        android:id="@+id/textdescripciond"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/nombreRestaurante"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/descripciond"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content"		      
+		        android:layout_below="@+id/textdescripciond"
+		        android:layout_marginLeft="10dip"	       
+		        android:textColor="@color/text_descrip"
+		        />
+               <TextView
+		        android:id="@+id/textprecioMenu"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/descripciond"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/precio"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp"		      
+		        android:layout_below="@+id/textprecioMenu"
+		        android:layout_marginLeft="10dip"	       
+		        android:textColor="@color/text_descrip"
+		          />
+                           
+             
+               <TextView
+		        android:id="@+id/texthorario"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/precio"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />
+               <TextView
+		        android:id="@+id/horario"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content"		      
+		        android:layout_below="@+id/texthorario"
+		        android:layout_marginLeft="10dip"	       
+		        android:textColor="@color/text_descrip"
+		        />
+                <TextView
+		        android:id="@+id/texttiposd"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="30dp" 		      
+		        android:layout_below="@+id/horario"
+		        android:layout_marginLeft="10dip"		         
+		        android:textColor="@color/text_descrip"
+		        android:textStyle="bold"
+		          />
+                <TextView
+		        android:id="@+id/tiposd"
+		        android:layout_width="match_parent"
+		        android:paddingTop="5dp"
+		        android:layout_height="wrap_content"		      
+		        android:layout_below="@+id/texttiposd"
+		        android:layout_marginLeft="10dip"	       
+		        android:textColor="@color/text_descrip"
+		        />
+              
+              
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ButtonVote"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+       
+        android:layout_above="@+id/advert"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <!-- RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/votesPlus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bt_mas1_style" >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="30dp"
+                android:text="@string/nVotosMas"
+                android:textColor="@android:color/white"
+                android:textSize="25dip" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/votesMinus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bt_menos1_style" >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="30dp"
+                android:text="@string/nVotosMas"
+                android:textColor="@android:color/white"
+                android:textSize="25dip" >
+            </TextView>
+        </RelativeLayout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"  
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bt_share_style" />
+
+        </RelativeLayout>
+        </LinearLayout>
+   
+    <LinearLayout
+        android:id="@+id/advert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+      </LinearLayout>
+   
+  
+
+</RelativeLayout> <!-- Fin del layout principal -->
